@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Website H2O</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Tambahkan Font Awesome -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">H2O Exchange</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#category">Category</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="register.html">Register</a></li> <!-- Link to registration page -->
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="arrow left-arrow" onclick="changeSlide(-1)">&#10094;</div>
+        <div class="banner-images">
+            <img src="images/banner1.jpg" alt="Banner 1" class="active">
+            <img src="images/banner2.jpg" alt="Banner 2">
+            <img src="images/banner3.jpg" alt="Banner 3">
+        </div>
+        <div class="arrow right-arrow" onclick="changeSlide(1)">&#10095;</div>
+    </section>
+
+    <section class="category" id="category">
+        <h2>Our Categories</h2>
+        <div class="category-images">
+            <div class="category-item">
+                <img src="images/category1.jpg" alt="Category 1">
+                <div class="category-overlay">
+                    <div class="category-text">Category 1</div>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="images/category2.jpg" alt="Category 2">
+                <div class="category-overlay">
+                    <div class="category-text">Category 2</div>
+                </div>
+            </div>
+            <div class="category-item">
+                <img src="images/category3.jpg" alt="Category 3">
+                <div class="category-overlay">
+                    <div class="category-text">Category 3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/about-image.jpg" alt="About Us">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Welcome to H2O Exchange, where our commitment to quality and innovation shines through. Our mission is to provide the best services and products while prioritizing customer satisfaction.</p>
+                <p>We strive to create a positive impact in the industry, focusing on sustainable practices and community engagement. Join us in our journey towards excellence!</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <div class="gallery-item">
+                <img src="images/gallery1.jpg" alt="Gallery 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery2.jpg" alt="Gallery 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery3.jpg" alt="Gallery 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery4.jpg" alt="Gallery 4">
+            </div>
+        </div>
+        <a href="gallery.html" class="see-more">
+            <span class="icon">➤</span> See More
+        </a>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 H2O Brand. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
